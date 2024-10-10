@@ -1,15 +1,15 @@
 #include <stdio.h>
-#include <ctype.h>
+
 int main()
 {
     char input;
     printf("enter the character : \n");
     scanf("%c", &input);
-    if (isdigit(input))
+    if (input >= '0' && input <= '9')
     {
         printf("it is a digit \n");
     }
-    else if (isalpha(input))
+    else if ((input >= 'A' && input <='Z') || (input >='a' && input <= 'z'))
     {
         printf("it is a alphabet \n");
     }
